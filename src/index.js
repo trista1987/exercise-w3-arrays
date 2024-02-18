@@ -71,18 +71,26 @@ catchPokemon()
 // ???
 const didICatchIt = name => {
   // check the pokemons to see if a specific pokemon is in the array
-const pocName = ()=>{pokemons["Ivysaur"]}
-console.log (pokemons.find(pocName()))
-};
+//const pocName = ()=>{pokemons["Ivysaur"]}
+//console.log (pokemons.find(pocName))
+console.log(pokemons.includes("Ivysaur"))
+}
 didICatchIt()
+
+
 
 
 const addInThirdPlace = () => {
   // add the pokemon "Clefairy" in the third place of the array
   // print the list so you see its there.
+  pokemons.splice(2,0,"Clefairy")
+  console.log(pokemons)
 };
+addInThirdPlace()
 
 // ***BONUS***
 const theLongestName = () => {
   // find the pokemon with the longest name
+  //pokemons.sort((a,b) => b.length - a.length)
+  //console.log(pokemons)
 };
