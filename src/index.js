@@ -43,9 +43,10 @@ console.log(makeThemBig())
 const onlyTheBs = () => {
   // only print the pokemons that starts with B
   return pokemons.filter(pokemons => pokemons.charAt(0) === "B")
+  
 };
 console.log(onlyTheBs())
-
+//pokemons.filter(pokemons=>pokemons.startsWith("B"))
 
 const notTheCs = () => {
   // remove all pokemons that starts with C
@@ -68,12 +69,14 @@ const catchPokemon = name => {
 };
 catchPokemon()
 
-// ???
+
 const didICatchIt = name => {
   // check the pokemons to see if a specific pokemon is in the array
 //const pocName = ()=>{pokemons["Ivysaur"]}
 //console.log (pokemons.find(pocName))
-console.log(pokemons.includes("Ivysaur"))
+//pokemons.find((el)=>el===name)
+pokemons.includes(el => el === name)
+console.log(name)
 }
 didICatchIt()
 
@@ -91,6 +94,9 @@ addInThirdPlace()
 // ***BONUS***
 const theLongestName = () => {
   // find the pokemon with the longest name
-  //pokemons.sort((a,b) => b.length - a.length)
-  //console.log(pokemons)
+  pokemons.sort((a,b) => b.length - a.length)
+  console.log(pokemons)
+  const longest = pokemons[0].length
+
+
 };
